@@ -11,7 +11,7 @@ jobs:
         runs-on: ubuntu-latest
         defaults:
           run:
-            working-directory: IS-601004/sample_app # change this to the directory your web app is in
+            working-directory: IS-601004 # change this to the directory your web app is in
         env:
           IMAGE_NAME: gcr.io/${{ secrets.GCP_PROJECT_ID_VIDEO }}/${{ secrets.GCP_APP_NAME }}
         steps:
